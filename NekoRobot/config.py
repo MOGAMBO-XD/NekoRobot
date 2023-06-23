@@ -11,16 +11,16 @@ class Config(object):
     LOGGER = True
 
     API_ID = "6447873"
-    API_HASH = "48b0315fcfa1759812fb9c651f5e75aa"
-    TOKEN = "5635289324:AAEJ1trXwDcTGxEnDtsD0HSW6YxubGfXnAg"
+    API_HASH = ""
+    TOKEN = ""
     OWNER_ID = "5136853481"
     OWNER_USERNAME = "Offline_into_100"
     SUPPORT_CHAT = "CyberSupportGroup"
     JOIN_LOGGER = ()
     EVENT_LOGS = ()
 
-    SQLALCHEMY_DATABASE_URI = "postgres://cemldrbi:aFsK0urD6fWaFniJNcJRCwq3Z7110esC@jelani.db.elephantsql.com/cemldrbi"
-    MONGO_DB_URI = "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority"
+    SQLALCHEMY_DATABASE_URI = ""
+    MONGO_DB_URI = ""
     LOAD = []
     NO_LOAD = ["rss"]
     WEBHOOK = False
