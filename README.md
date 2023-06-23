@@ -69,7 +69,7 @@ The Easiest Way to Deploy This Bot is Via Heroku. In Order To deploy, You Just H
 
 
 <details>
-    <summary>𝙑𝙋𝙎 𝘽𝙊𝙏 𝘿𝙀𝙋𝙇𝙊𝙔 𝙊𝙋𝙏𝙄𝙊𝙉𝙎</summary>
+    <summary>## ╔═━「 𝙑𝙋𝙎 𝘽𝙊𝙏 𝘿𝙀𝙋𝙇𝙊𝙔 𝙊𝙋𝙏𝙄𝙊𝙉𝙎」</summary>
     <br>
     <p align="center">
 
