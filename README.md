@@ -68,7 +68,7 @@ This repo was just reamped to suit an Anime-centric community. All original cred
 
 The Easiest Way to Deploy This Bot is Via Heroku. In Order To deploy, You Just Have Fill The Necessary Environment Variables and Done!
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](Soon)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MOGAMBO-XD/NekoRobot)
 
 
 <details>
