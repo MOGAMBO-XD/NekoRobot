@@ -479,8 +479,8 @@ A powerful telegram group management bot.*
 Written in Python with the help of
 [Telethon](https://github.com/LonamiWebs/Telethon) • [Pyrogram](https://github.com/pyrogram/pyrogram) • [PTB](https://github.com/python-telegram-bot/python-telegram-bot)
 And suing [SQlalchemy](https://www.sqlalchemy.org) and [Mongo](https://cloud.mongodb.com) as Database.
-
-©2022-2023 @StrawhatNetwork, All rights reserved.
+   [REPO](https://GitHub.com/MOGAMBO-XD/NekoRobot
+©2022-2023 @Cybermusicproject, All rights reserved.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
