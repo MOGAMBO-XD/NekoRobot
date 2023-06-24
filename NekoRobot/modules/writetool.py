@@ -20,7 +20,7 @@ Successfully Written Text 🌺
 
 **» Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 **» Requested by :** {message.from_user.mention}
-**» Support :** [Straw Hat](https://t.me/StrawhatTeam)
+**» Support :** [Update Channel](https://t.me/CYBERMUSICPROJECT)
 """
         await m.delete()
         await fallen.send_photo(
@@ -43,7 +43,7 @@ Successfully Written Text 🌺
 
 **» Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 **» Requested by :** {message.from_user.mention}
-**» Support :** [Straw Hat](https://t.me/StrawhatTeam)
+**» Support :** [UPDATE CHANNEL](https://t.me/CYBERMUSICPROJECT)
 """
         await m.delete()
         await fallen.send_photo(
