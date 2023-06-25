@@ -36,7 +36,7 @@ A modular telegram Python bot running on python3 with an sqlalchemy database.
 
 Originally a marie fork - Neko has evolved further and was built to be more useful for Anime Chats.
 
-Can be found on telegram as [Neko](https://t.me/NekoXRobot).
+Can be found on telegram as [Neko](https://t.me/Neko_XRobot).
 
 The Support group can be reached out to at [Cyber Support](https://t.me/CyberMusicProject), where you can ask for help setting up your bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available.
 
