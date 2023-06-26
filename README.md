@@ -49,6 +49,10 @@ The Support group can be reached out to at [Cyber Support](https://t.me/CyberMus
 + [MOGAMBO](https://github.com/mogambo-Xd) : OWNER | DEV
 + [Mogambo](https://t.me/mogambo_odin) : SUDO
 
+   <a href="https://t.me/CYBERMUSICPROJECT"><img src="https://img.shields.io/badge/Channel%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=320px></a>
+   <a href="https://t.me/CYBERSupportgroup"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=320px></a>
+   
+
 
 
 ## ╔═━「 Credits 」
