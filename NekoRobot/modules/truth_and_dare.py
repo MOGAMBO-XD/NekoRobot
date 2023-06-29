@@ -7,21 +7,24 @@ from NekoRobot.modules.disable import DisableAbleCommandHandler
 
 
 def truth(update: Update, context: CallbackContext):
-    truth = requests.get(f"https://api.truthordarebot.xyz/v1/truth").json()["question"]
+    context.args
+    truth = requests.get("https://elianaapi.herokuapp.com/games/truth").json()
+    truth = truth.get("truth")
     update.effective_message.reply_text(truth)
 
 
 def dare(update: Update, context: CallbackContext):
-    dare = requests.get(f"https://api.truthordarebot.xyz/v1/dare").json()["question"]
+    context.args
+    dare = requests.get("https://elianaapi.herokuapp.com/games/dares").json()
+    dare = dare.get("dare")
     update.effective_message.reply_text(dare)
 
 
-TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth, run_async=True)
-DARE_HANDLER = DisableAbleCommandHandler("dare", dare, run_async=True)
+TRUTH_HANDLER = DisableAbleCommandHandler("truth", truth)
+DARE_HANDLER = DisableAbleCommandHandler("dare", dare)
 
 dispatcher.add_handler(TRUTH_HANDLER)
 dispatcher.add_handler(DARE_HANDLER)
-
 
 __help__ = """
 *Truth & Dare*
