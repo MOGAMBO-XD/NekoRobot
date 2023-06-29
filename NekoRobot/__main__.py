@@ -81,28 +81,31 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hey* {} 🌺
-
-*๏ It's* {} !
-➻ The most powerful telegram group management bot with some awesome and useful features.
-
-──────────────────
-*๏ Click on the help button to get information about my modules & commands.*
+*Hello {} !*
+» ɪ ᴀᴍ {} [🥀]({}) ᴀ ᴘᴏᴡᴇʀ ꜰᴜʟʟ ʙᴏᴛ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ
+────────────────────────
+» *Uptime:* `{}`
+» `{}` *users, across* `{}` *chats.*
+────────────────────────
+» ʜɪᴛ /help ᴛᴏ ꜱᴇᴇ ᴍʏ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ.
 """
+
 buttons = [
-    [
+        [
         InlineKeyboardButton(
-            text="➕ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        ),
+            text="ᴀᴅᴅ ᴍᴇ", url=f"t.me/{bu}?startgroup=true"
+        )
     ],
     [
-        InlineKeyboardButton(text="🐈 ᴀʙᴏᴜᴛ", callback_data="Neko_"),
-        InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CyberMusicProject"),
-        InlineKeyboardButton(text="🚑 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Neko_"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/{OWNER_USERNAME}"),
+    ],
+    [
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/CYBERMUSICPROJECT"),
     ],
     [
         InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
