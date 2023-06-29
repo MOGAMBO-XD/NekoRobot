@@ -225,9 +225,8 @@ def start(update: Update, context: CallbackContext):
                 )
 
             elif args[0].lower().startswith("stngs_"):
-                ma elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
-                chat = dispatcher.bot.getChat(match[1])
+                chat = dispatcher.bot.getChat(match.group(1))
 
                 if is_user_admin(chat, update.effective_user.id):
                     send_settings(match[1], update.effective_user.id, False)
