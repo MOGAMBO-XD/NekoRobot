@@ -241,8 +241,9 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_sticker(
                 "CAACAgUAAxkBAAED4i9knRVWtdtzTbSM7FhEjJTnNORcewACagsAAiMQyFStj95ITTbhjy8E"
             )
+            time.sleep(1.2)
+            K.delete()
             update.effective_message.reply_text(
-                update.effective_message.reply_text(
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(BOT_NAME),
