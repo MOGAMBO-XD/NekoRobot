@@ -8,14 +8,14 @@ from NekoRobot.modules.disable import DisableAbleCommandHandler
 
 def truth(update: Update, context: CallbackContext):
     context.args
-    truth = requests.get("https://elianaapi.herokuapp.com/games/truth").json()
+    truth = requests.get("https://api.truthordarebot.xyz/v1/truth").json()
     truth = truth.get("truth")
     update.effective_message.reply_text(truth)
 
 
 def dare(update: Update, context: CallbackContext):
     context.args
-    dare = requests.get("https://elianaapi.herokuapp.com/games/dares").json()
+    dare = requests.get("https://api.truthordarebot.xyz/v1/dare").json()
     dare = dare.get("dare")
     update.effective_message.reply_text(dare)
 
