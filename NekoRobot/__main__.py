@@ -262,7 +262,7 @@ def start(update: Update, context: CallbackContext):
                 uptime,
                 sql.num_users(),
                 sql.num_chats(),
-            ),
+            )
 
 
 def error_handler(update, context):
