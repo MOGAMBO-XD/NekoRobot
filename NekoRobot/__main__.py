@@ -37,7 +37,6 @@ from NekoRobot import (
     OWNER_ID,
     PORT,
     START_IMG,
-    START_STICKER,
     SUPPORT_CHAT,
     TOKEN,
     URL,
@@ -239,8 +238,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_sticker(
-                "START_STICKER"
+         #   update.effective_message.reply_sticker(
+                ""
             )
             time.sleep(1.2)
             K.delete()
