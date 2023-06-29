@@ -241,19 +241,28 @@ def start(update: Update, context: CallbackContext):
                 "CAACAgUAAxkBAAED4i9knRVWtdtzTbSM7FhEjJTnNORcewACagsAAiMQyFStj95ITTbhjy8E"
             )
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(BOT_NAME),
+                    escape_markdown(START_IMG),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats(),
+                ),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
+                disable_web_page_preview=False,
             )
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="I am alive baby!\n<b>Haven't slept since :</b> <code>{}</code>".format(
-                uptime
+            caption="ʜᴇʏ `{}`,\n\nɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ🖤!\n➥ᴜᴘᴛɪᴍᴇ: `{}` \n➥ᴜsᴇʀs: `{}` \n➥ᴄʜᴀᴛs: `{}` ".format(
+                usr.first_name,
+                uptime,
+                sql.num_users(),
+                sql.num_chats(),
             ),
-            parse_mode=ParseMode.HTML,
-        )
 
 
 def error_handler(update, context):
