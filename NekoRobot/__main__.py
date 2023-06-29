@@ -247,6 +247,7 @@ def start(update: Update, context: CallbackContext):
                     sql.num_users(),
                     sql.num_chats(),
                 ),
+            )
     else:
         update.effective_message.reply_photo(
             START_IMG,
