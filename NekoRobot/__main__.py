@@ -225,6 +225,7 @@ def start(update: Update, context: CallbackContext):
                 )
 
             elif args[0].lower().startswith("stngs_"):
+                ma elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
                 chat = dispatcher.bot.getChat(match[1])
 
@@ -265,6 +266,32 @@ def start(update: Update, context: CallbackContext):
                 disable_web_page_preview=False,
             )
     else:
+        update.effective_message.reply_photo(
+            START_IMG,
+            caption="ʜᴇʏ `{}`,\n\nɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ🖤!\n➥ᴜᴘᴛɪᴍᴇ: `{}` \n➥ᴜsᴇʀs: `{}` \n➥ᴄʜᴀᴛs: `{}` ".format(
+                usr.first_name,
+                uptime,
+                sql.num_users(),
+                sql.num_chats(),
+            ),
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="ʜᴇʟᴘ",
+                            url=f"https://t.me/{bu}?start=help",
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴏᴡɴᴇʀ",
+                            url=f"https://t.me/{OWNER_USERNAME}",
+                        ),
+                    ],
+                ]
+            ),
+        )
+
+
 
 def error_handler(update, context):
     """Log the error and send a telegram message to notify the developer."""
