@@ -1,5 +1,5 @@
 from telegram import Message
-from telegram.ext import BaseFilter
+from telegram.ext import MessageFilter
 
 from NekoRobot import DEV_USERS, DRAGONS
 
