@@ -469,13 +469,22 @@ def Neko_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "Neko_back":
         first_name = update.effective_user.first_name
+        uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(BOT_NAME),
+                    escape_markdown(START_IMG),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats(),
+                ),
             reply_markup=InlineKeyboardMarkup(buttons),
             parse_mode=ParseMode.MARKDOWN,
             timeout=60,
             disable_web_page_preview=False,
         )
+        
 
 
 @run_async
