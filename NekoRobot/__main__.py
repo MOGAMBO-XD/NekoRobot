@@ -257,29 +257,11 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ʜᴇʏ `{}`,\n\nɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ🖤!\n➥ᴜᴘᴛɪᴍᴇ: `{}` \n➥ᴜsᴇʀs: `{}` \n➥ᴄʜᴀᴛs: `{}` ".format(
-                usr.first_name,
-                uptime,
-                sql.num_users(),
-                sql.num_chats(),
+            caption="I am alive baby!\n<b>Haven't slept since :</b> <code>{}</code>".format(
+                uptime
             ),
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="ʜᴇʟᴘ",
-                            url=f"https://t.me/{bu}?start=help",
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴏᴡɴᴇʀ",
-                            url=f"https://t.me/{OWNER_USERNAME}",
-                        ),
-                    ],
-                ]
-            ),
+            parse_mode=ParseMode.HTML,
         )
-
 
 
 
