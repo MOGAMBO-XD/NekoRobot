@@ -814,8 +814,8 @@ def main():
         except BadRequest as e:
             LOGGER.warning(e.message)
 
-    test_handler = CommandHandler("test", test)
-    start_handler = CommandHandler("start", start)
+    test_handler = CommandHandler("test", test, run_async=True)
+    start_handler = CommandHandler("start", start, run_async=True)
 
     help_handler = CommandHandler("help", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_.*")
