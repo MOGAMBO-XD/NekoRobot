@@ -100,12 +100,12 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="🐈 ᴀʙᴏᴜᴛ", callback_data="Neko_"),
-        InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🤘 ᴀʙᴏᴜᴛ", callback_data="Neko_"),
+        InlineKeyboardButton(text="💪🇮🇳 ᴏᴡɴᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
-        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/CyberMusicProject"),
-        InlineKeyboardButton(text="🚑 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🦄 ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/CyberMusicProject"),
+        InlineKeyboardButton(text="🇮🇳 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
