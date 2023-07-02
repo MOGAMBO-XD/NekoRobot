@@ -61,4 +61,3 @@ zalgo-text
 bs4==0.0.1
 prettytable==0.7.2
 youtube-dl==2020.1.1
-lxml==4.6.3
