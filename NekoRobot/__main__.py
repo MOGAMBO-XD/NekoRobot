@@ -174,8 +174,8 @@ for module_name in ALL_MODULES:
         USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
 
     print("+===============================================================+")
-    print("|                              NEKO.                            |")
-    print("+===============+===============+===============+===============+")
+    print("|                        NEKO Robot 🤖                          |")
+    print("|.                    JOIN - @idealizerd                         ")
     print("+===============+===============+===============+===============+")
     print(f"[INFO]: BOT STARTED AS {BOT_NAME}!")
 
